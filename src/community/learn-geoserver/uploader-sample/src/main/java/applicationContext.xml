@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <!-- 在左侧菜单栏添加一个菜单按钮  -->
+    <bean id="uploaderPage" class="org.geoserver.web.MenuPageInfo">
+        <property name="id" value="uploaderPage"/>
+        <property name="titleKey" value="UploaderPage.page.title"/>
+        <property name="descriptionKey" value="UploaderPage.page.description"/>
+        <property name="componentClass" value="org.flypopo.geoserver.UploaderPage"/>
+        <property name="category" ref="dataCategory" />
+        <property name="order" value="200" />
+<!--        <property name="icon" value="../../img/icons/silk/database.png" />-->
+        <property name="authorizer" ref="workspaceAdminAuthorizer"/>
+    </bean>
+</beans>
