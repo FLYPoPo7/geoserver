@@ -13,4 +13,11 @@
 <!--        <property name="icon" value="../../img/icons/silk/database.png" />-->
         <property name="authorizer" ref="workspaceAdminAuthorizer"/>
     </bean>
+    <bean id="cesiumPreviewPage" class="org.geoserver.web.MenuPageInfo">
+        <property name="id" value="cesiumPreviewPage"/>
+        <property name="titleKey" value="CesiumPreviewPage.page.title"/>
+        <property name="descriptionKey" value="CesiumPreviewPage.page.description"/>
+        <property name="componentClass" value="org.flypopo.geoserver.CesiumPreviewPage"/>
+        <property name="authorizer" ref="workspaceAdminAuthorizer"/>
+    </bean>
 </beans>

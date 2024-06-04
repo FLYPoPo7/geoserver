@@ -11,7 +11,7 @@ public class HelloPage extends GeoServerBasePage {
         add(
                 new Link("link") {
                     public void onClick() {
-                        setResponsePage(new HelloPage());
+                        setResponsePage(new CesiumPreviewPage("http://cesiumjs.org/"));
                     }
                 });
     }
