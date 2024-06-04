@@ -234,6 +234,21 @@
       <version>${jetty.servlet-api.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.flypopo.geoserver</groupId>
+      <artifactId>hello-ows</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flypopo.geoserver</groupId>
+      <artifactId>hello-web</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flypopo.geoserver</groupId>
+      <artifactId>uploader-sample</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
